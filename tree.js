@@ -23,8 +23,8 @@ const decisionTree = {
     text: "Qual é o objetivo da sua pesquisa?",
     image: "logopucrs.png",
     options: [
-      { text: "Descrever / Avaliar", next: "descrever" },
-      { text: "Correlacionar", next: "correlacionar" },
+      { text: "Descrever", next: "descrever" },
+      { text: "Correlacionar/ Associar", next: "correlacionar" },
       { text: "Comparar", next: "comparar" },
       { text: "Predizer", next: "predizer" },
       { text: "Validar / Adaptar (Psicometria)", next: "validar" }
@@ -48,8 +48,8 @@ const decisionTree = {
     image: "img/medidas.jpg",
     options: [
       { text: "Distribuição (Shapiro-Wilk)", next: "shapiro" },
-      { text: "Paramétrico", next: "descr_parametrico" },
-      { text: "Não Paramétrico", next: "descr_nparametrico" }
+      { text: "Paramétrico", next: "descr_parametrico" },   // Mudar o nome
+      { text: "Não Paramétrico", next: "descr_nparametrico" } //Mudar o nome
     ]
   },
 
@@ -319,6 +319,7 @@ document.getElementById("back-button").addEventListener("click", () => {
 });
 
 displayNode("start");
+
 
 
 
