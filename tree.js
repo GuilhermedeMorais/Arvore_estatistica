@@ -68,28 +68,28 @@ const decisionTree = {
     header: "Interpretação: p > 0,05",
     text: "Os dados seguem distribuição normal. É possível utilizar testes <b>Paramétricos</b>.",
     image: "img/normal.jpg",
-    options: [{ text: "Finalizar", next: "final_descr" }]
+    options: [{ text: "Finalizar", next: "final" }]
   },
 
   shapiro_menor: {
     header: "Interpretação: p < 0,05",
     text: "Os dados <b>não seguem</b> distribuição normal. Utilize testes <b>Não Paramétricos</b>.",
     image: "img/nonnormal.jpg",
-    options: [{ text: "Finalizar", next: "final_descr" }]
+    options: [{ text: "Finalizar", next: "final" }]
   },
 
   descr_parametrico: {
     header: "Análises Paramétricas",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed purus vel justo tempus blandit. Donec in imperdiet arcu.",
     image: "img/parametrico.jpg",
-    options: [{ text: "Finalizar", next: "final_descr" }]
+    options: [{ text: "Finalizar", next: "final" }]
   },
 
   descr_nparametrico: {
     header: "Análises Não Paramétricas",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non lectus nec neque efficitur rhoncus. Ut consequat augue et velit imperdiet posuere.",
     image: "img/nparametrico.jpg",
-    options: [{ text: "Finalizar", next: "final_descr" }]
+    options: [{ text: "Finalizar", next: "final" }]
   },
 
   // ======= NOMINAL =======
@@ -97,7 +97,7 @@ const decisionTree = {
     header: "Variáveis Nominais",
     text: "Para variáveis nominais, utilize medidas de <b>Frequência</b>.",
     image: "img/frequencia.jpg",
-    options: [{ text: "Entendido", next: "final_descr" }]
+    options: [{ text: "Entendido", next: "final" }]
   },
 
   // ======= CORRELACIONAR =======
@@ -106,18 +106,20 @@ const decisionTree = {
     text: "Escolha o tipo de análise de correlação desejada:",
     image: "img/correlacionar.jpg",
     options: [
-      { text: "Paramétrica", next: "corr_parametrica" },
-      { text: "Não Paramétrica", next: "corr_nparametrica" },
+      { text: "Ordinal/Escalar", next: "corr_num" },
       { text: "Nominal", next: "corr_nominal" }
     ]
   },
 
-  // ======= PARAMÉTRICA =======
-  corr_parametrica: {
-    header: "Correlação Paramétrica",
+  // ======= Ordinal ou escalar =======
+  corr_num: {
+    header: "Variável Ordinal ou Escalar",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id enim in velit dapibus ultricies. Praesent luctus, lorem at placerat tincidunt, nisl sem vehicula lacus, non fringilla neque justo vitae erat.",
     image: "img/parametrica.jpg",
-    options: [{ text: "Finalizar", next: "final" }]
+    options: [
+      { text: "Paramétrica", next: "corrpara" }
+      { text: "Não Paramétrica", next: "  corr_nparametrica"}
+    ]
   },
 
   // ======= NÃO PARAMÉTRICA =======
@@ -128,6 +130,15 @@ const decisionTree = {
     options: [{ text: "Finalizar", next: "final" }]
   },
 
+  // ======= PARAMÉTRICA =======
+ corrpara: {
+    header: "Correlação Paramétrica",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam id enim in velit dapibus ultricies. Praesent luctus, lorem at placerat tincidunt, nisl sem vehicula lacus, non fringilla neque justo vitae erat.",
+    image: "img/parametrica.jpg",
+    options: [{ text: "Finalizar", next: "final" }]
+  },
+
+  
   // ======= NOMINAL =======
   corr_nominal: {
     header: "Correlação Nominal",
@@ -221,18 +232,20 @@ const decisionTree = {
     text: "Escolha o tipo de modelo de regressão que deseja utilizar:",
     image: "img/predizer.jpg",
     options: [
-      { text: "Linear", next: "pred_linear" },
-      { text: "Logística", next: "pred_logistica" }
+      { text: "Escalar/Ordinal", next: "reg_linear" },
+      { text: "Dicotômica", next: "reg_logistica" }
     ]
   },
 
-  pred_linear: {
+  // ========== Regressão para ordinal ou escalar ===========
+  reg_linear: {
     header: "Regressão Linear",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed orci a eros aliquet facilisis. Nam sagittis quam vel est porta, vel tristique elit bibendum. Phasellus vitae efficitur lorem.",
     image: "img/reg_linear.jpg",
     options: [{ text: "Finalizar", next: "final" }]
   },
 
+  //================= regressão para dicotomica ==========
   pred_logistica: {
     header: "Regressão Logística",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur convallis nibh a mi volutpat, in tristique urna maximus. Praesent et faucibus sem. Nullam id ligula in nulla fermentum tincidunt.",
@@ -267,12 +280,6 @@ const decisionTree = {
 
 
   // ======= FINAIS =======
-  final_descr: {
-    header: "Medidas descritivas",
-    text: "Você pode complementar sua análise com gráficos e medidas de dispersão.",
-    image: "img/final.jpg",
-    options: []
-  },
 
   final: {
     header: "Interpretação dos resultados",
@@ -319,6 +326,7 @@ document.getElementById("back-button").addEventListener("click", () => {
 });
 
 displayNode("start");
+
 
 
 
