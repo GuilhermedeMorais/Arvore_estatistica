@@ -28,9 +28,9 @@ const decisionTree = {
     header: "Tomada de decisão estatística",
     text: "Qual é o objetivo da sua pesquisa?",
     image: "logopucrs.png",
-    imageWidth: "120px",
+    imageWidth: "60px",
     imageHeight: "auto",
-    options: [
+  options: [
       { text: "Descrever", next: "descrever" },
       { text: "Correlacionar / Associar", next: "correlacionar" },
       { text: "Comparar", next: "comparar" },
@@ -320,6 +320,7 @@ document.getElementById("back-button").onclick = () => {
 };
 
 displayNode("start");
+
 
 
 
