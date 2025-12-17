@@ -52,6 +52,8 @@ const decisionTree = {
     header: "Variáveis Ordinais ou Escalares",
     text: "Escolha uma opção de análise:",
     image: "img/medidas.jpg",
+    imageWidth: "250px",
+    imageHeight: "auto",
     options: [
       { text: "Distribuição (Shapiro-Wilk)", next: "shapiro" },
       { text: "Paramétrica", next: "descr_parametrico" },
@@ -318,3 +320,4 @@ document.getElementById("back-button").onclick = () => {
 };
 
 displayNode("start");
+
