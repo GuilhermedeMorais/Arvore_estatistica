@@ -28,7 +28,7 @@ const decisionTree = {
     header: "Tomada de decisão estatística",
     text: "Qual é o objetivo da sua pesquisa?",
     image: "imgestatistica.png",
-    imageWidth: "10px",
+    imageWidth: "100px",
     imageHeight: "auto",
   options: [
       { text: "Descrever", next: "descrever" },
@@ -320,6 +320,7 @@ document.getElementById("back-button").onclick = () => {
 };
 
 displayNode("start");
+
 
 
 
