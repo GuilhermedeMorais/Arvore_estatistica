@@ -1,4 +1,4 @@
-// ======= Função para adicionar tooltips automáticos =======
+ a// ======= Função para adicionar tooltips automáticos =======
 function addTooltips(text) {
   const terms = {
     "Paramétrica": "Análises que assumem distribuição normal e utilizam estatísticas baseadas em média e variância.",
@@ -25,19 +25,50 @@ function addTooltips(text) {
 const decisionTree = {
 
   start: {
-    header: "Tomada de decisão estatística",
-    text: "Qual é o objetivo da sua pesquisa?",
-    image: "imgestatistica.png",
-    imageWidth: "100px",
-    imageHeight: "auto",
+  header: "Tomada de decisão estatística",
+  text: "Qual é o objetivo da sua pesquisa?",
+  image: "img/estatistica.png",
+  imageWidth: "100px",
+  imageHeight: "auto",
   options: [
-      { text: "Descrever", next: "descrever" },
-      { text: "Correlacionar / Associar", next: "correlacionar" },
-      { text: "Comparar", next: "comparar" },
-      { text: "Predizer", next: "predizer" },
-      { text: "Validar / Adaptar (Psicometria)", next: "validar" }
-    ]
-  },
+    { text: "Descrever", next: "descrever" },
+    { text: "Correlacionar / Associar", next: "correlacionar" },
+    { text: "Comparar", next: "comparar" },
+    { text: "Predizer", next: "predizer" },
+    { text: "Validar / Adaptar (Psicometria)", next: "validar" },
+    { text: "Manual", next: "manual" }
+  ]
+},
+
+manual: { 
+  header: "Como usar a árvore decisória",
+  text: "Leia atentamente as instruções abaixo antes de prosseguir.",
+  image: "img/manual.jpg",
+
+  manual: `
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+  Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+  Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+  Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+  Praesent sapien massa, convallis a pellentesque nec, egestas non nisi  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
+  Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
+  Praesent sapien massa, convallis a pellentesque nec, egestas non nisi
+  `,
+
+  options: [
+    { text: "Início", next: "start" }
+  ]
+}
+
 
   // ======= DESCREVER =======
   descrever: {
@@ -168,7 +199,7 @@ const decisionTree = {
   // ======= COMPARAR =======
   comparar: {
     header: "Comparar grupos",
-    text: "Quantos grupos?",
+    text: "Quantos grupos serão comparados?",
     image: "img/comparar.jpg",
     options: [
       { text: "2 grupos", next: "comparar_2grupos" },
@@ -276,7 +307,7 @@ const decisionTree = {
 
   final: {
     header: "Interpretação",
-    text: "Reporte <b>p</b> e <b>tamanho de efeito</b>.",
+    text: "Reporte os resultados de acordo com cada análise e referenciando a literatura acerca dos parâmetros utilizados.",
     image: "img/final.jpg",
     options: []
   }
@@ -320,6 +351,7 @@ document.getElementById("back-button").onclick = () => {
 };
 
 displayNode("start");
+
 
 
 
