@@ -1,4 +1,4 @@
- a// ======= Função para adicionar tooltips automáticos =======
+ // ======= Função para adicionar tooltips automáticos =======
 function addTooltips(text) {
   const terms = {
     "Paramétrica": "Análises que assumem distribuição normal e utilizam estatísticas baseadas em média e variância.",
@@ -67,7 +67,7 @@ manual: {
   options: [
     { text: "Início", next: "start" }
   ]
-}
+},
 
 
   // ======= DESCREVER =======
@@ -325,7 +325,13 @@ function displayNode(nodeKey) {
   }
 
   document.getElementById("node-header").textContent = node.header;
-  document.getElementById("node-text").innerHTML = addTooltips(node.text);
+const textDiv = document.getElementById("node-text");
+
+if (node.manual) {
+  textDiv.innerHTML = addTooltips(node.manual);
+} else {
+  textDiv.innerHTML = addTooltips(node.text);
+}
   document.getElementById("node-image").src = node.image;
 
   const optionsDiv = document.getElementById("options");
@@ -351,6 +357,7 @@ document.getElementById("back-button").onclick = () => {
 };
 
 displayNode("start");
+
 
 
 
