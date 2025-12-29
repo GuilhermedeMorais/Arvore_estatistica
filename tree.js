@@ -43,7 +43,7 @@ const decisionTree = {
 manual: { 
   header: "Como usar a árvore decisória",
   text: "Leia atentamente as instruções abaixo antes de prosseguir.",
-  image: "img/manual.jpg",
+  
 
   manual: `
   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -388,6 +388,7 @@ document.getElementById("back-button").onclick = () => {
 };
 
 displayNode("start");
+
 
 
 
