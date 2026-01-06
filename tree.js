@@ -46,17 +46,17 @@ manual: {
   
 
   manual: `
-</p>Para utilizar a árvore decisória alguns conceitos serão importantes, os termos em destaque nas páginas apresentam explicações que aparecem ao deixar o mouse alguns segundos sobre uma palavra destacada.
+Para utilizar a árvore decisória alguns conceitos serão importantes, os termos em destaque nas páginas apresentam explicações que aparecem ao deixar o mouse alguns segundos sobre uma palavra destacada.
 Porém, é indicado que, ao utilizar o app você leia o manual que será linkado abaixo, pelo manual você poderá acessar explicações mais detalhadas acerca dos conceitos necessários para a utilização deste app.
 Esperamos que você faça bom proveito da nossa ferramenta.
-</p>
-<a href="https://www.ibm.com/docs/pt-br/spss-statistics/29.0.0?topic=statistics-assumptions-tests"
+<br/>
+</a href="https://www.canva.com/design/DAG9kDdFhJw/w2Pa-tX1whvOsWDDuiJTNw/view?utm_content=DAG9kDdFhJw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9a907434ba"
    target="_blank">
-   Guia de pressupostos estatísticos (IBM SPSS)
+  Manual da Árvore Decisória
 </a>
-</p>
+<br/>
 Att: Guilherme de Morais e Marcela Severino
-</p>
+
   `,
 
   options: [
@@ -352,6 +352,7 @@ document.getElementById("back-button").onclick = () => {
 };
 
 displayNode("start");
+
 
 
 
