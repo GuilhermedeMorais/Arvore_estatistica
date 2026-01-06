@@ -50,11 +50,13 @@ Para utilizar a árvore decisória alguns conceitos serão importantes, os termo
 Porém, é indicado que, ao utilizar o app você leia o manual que será linkado abaixo, pelo manual você poderá acessar explicações mais detalhadas acerca dos conceitos necessários para a utilização deste app.
 Esperamos que você faça bom proveito da nossa ferramenta.
 <br/>
+<br/>
 <a href="https://www.canva.com/design/DAG9kDdFhJw/w2Pa-tX1whvOsWDDuiJTNw/view?utm_content=DAG9kDdFhJw&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h9a907434ba"
    target="_blank"
    rel="noopener noreferrer">
   Manual da Árvore Decisória
 </a>
+<br/>
 <br/>
 Att: Guilherme de Morais e Marcela Severino
 
@@ -353,6 +355,7 @@ document.getElementById("back-button").onclick = () => {
 };
 
 displayNode("start");
+
 
 
 
