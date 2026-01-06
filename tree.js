@@ -46,53 +46,8 @@ manual: {
   
 
   manual: `
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
-  Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-  Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
-  Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-  Praesent sapien massa, convallis a pellentesque nec, egestas non nisi  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
-  Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-  Praesent sapien massa, convallis a pellentesque nec, egestas non nisiLorem ipsum dolor sit amet, consectetur adipiscing elit.
-  Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
-  Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-  Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
-  Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-  Praesent sapien massa, convallis a pellentesque nec, egestas non nisi  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
-  Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-  Praesent sapien massa, convallis a pellentesque nec, egestas non nisiLorem ipsum dolor sit amet, consectetur adipiscing elit.
-  Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
-  Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-  Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
-  Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-  Praesent sapien massa, convallis a pellentesque nec, egestas non nisi  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.
-  Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
-  Praesent sapien massa, convallis a pellentesque nec, egestas non nisi 
-  FIM
+Para utilizar a árvore decisória alguns conceitos serão importantes, os termos em destaque nas páginas apresentam explicações que aparecem ao deixar o mouse alguns segundos sobre uma palavra destacada. Porém, é indicado que, ao utilizar o app você leia o manual que será linkado abaixo, pelo manual você poderá acessar explicações mais detalhadas acerca dos conceitos necessários para a utilização deste app. Esperamos que você faça bom proveito da nossa ferramenta.
+Att: Guilherme de Morais e Marcela Severino
   `,
 
   options: [
@@ -388,6 +343,7 @@ document.getElementById("back-button").onclick = () => {
 };
 
 displayNode("start");
+
 
 
 
