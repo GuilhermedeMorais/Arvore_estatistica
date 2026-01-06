@@ -85,8 +85,8 @@ Att: Guilherme de Morais e Marcela Severino
     image: "img/medidas.jpg",
     options: [
       { text: "Distribuição (Shapiro-Wilk)", next: "shapiro" },
-      { text: "Paramétrica", next: "descr_parametrico" },
-      { text: "Não Paramétrica", next: "descr_nparametrico" }
+   //   { text: "Paramétrica", next: "descr_parametrico" },
+   //   { text: "Não Paramétrica", next: "descr_nparametrico" }
     ]
   },
 
@@ -95,8 +95,8 @@ Att: Guilherme de Morais e Marcela Severino
     text: "Selecione o resultado do teste:",
     image: "img/shapiro.jpg",
     options: [
-      { text: "p-valor > 0,05", next: "shapiro_maior" },
-      { text: "p-valor < 0,05", next: "shapiro_menor" }
+      { text: "p-valor > 0,05", next: "descr_parametrico" },
+      { text: "p-valor < 0,05", next: "descr_nparametrico" }
     ]
   },
 
@@ -355,6 +355,7 @@ document.getElementById("back-button").onclick = () => {
 };
 
 displayNode("start");
+
 
 
 
