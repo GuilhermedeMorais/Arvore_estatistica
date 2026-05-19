@@ -93,3 +93,19 @@ body {
   opacity: 1;
 }
 
+
+// Aqui é pra tentar ajustar as imagens
+#node-image {
+  width: 100%;
+  height: 250px;
+
+  object-fit: contain;
+  object-position: center;
+
+  background-color: #f0f0f0;
+
+  display: block;
+  margin: 1rem auto;
+
+  border-radius: 1rem;
+}
