@@ -27,7 +27,7 @@ const decisionTree = {
   start: {
   header: "Tomada de decisão estatística",
   text: "Qual é o objetivo da sua pesquisa?",
-  image: "imgestatistica.png",
+  image: "pucrs.png",
   imageWidth: "100px",
   imageHeight: "auto",
   options: [
@@ -72,7 +72,7 @@ Att: Guilherme de Morais e Marcela Severino
   descrever: {
     header: "Descrição / Avaliação",
     text: "O tipo de variável é <b>Ordinal ou Escalar</b>, ou <b>Nominal</b>?",
-    image: "img/descrever.jpg",
+    image: "tiposvariaveis.png",
     options: [
       { text: "Ordinal ou Escalar", next: "descr_ordinal" },
       { text: "Nominal", next: "descr_nominal" }
@@ -82,7 +82,7 @@ Att: Guilherme de Morais e Marcela Severino
   descr_ordinal: {
     header: "Variáveis Ordinais ou Escalares",
     text: "Escolha uma opção de análise:",
-    image: "img/medidas.jpg",
+    image: "ordinalXescalar.png",
     options: [
       { text: "Distribuição (Shapiro-Wilk)", next: "shapiro" },
     ]
@@ -91,7 +91,7 @@ Att: Guilherme de Morais e Marcela Severino
   shapiro: {
     header: "Teste de Normalidade - Shapiro-Wilk",
     text: "Selecione o resultado do teste:",
-    image: "img/shapiro.jpg",
+    image: "NormalXNnormal.png",
     options: [
       { text: "p-valor > 0,05", next: "descr_parametrico" },
       { text: "p-valor < 0,05", next: "descr_nparametrico" }
@@ -101,14 +101,14 @@ Att: Guilherme de Morais e Marcela Severino
   shapiro_maior: {
     header: "Interpretação",
     text: "Os dados seguem distribuição normal. Utilize testes <b>Paramétricos</b>.",
-    image: "img/normal.jpg",
+    image: "NormalXNnormal.png",
     options: [{ text: "Finalizar", next: "final" }]
   },
 
   shapiro_menor: {
     header: "Interpretação",
     text: "Os dados não seguem distribuição normal. Utilize testes <b>Não Paramétricos</b>.",
-    image: "img/nonnormal.jpg",
+    image: "NormalXNnormal.png",
     options: [{ text: "Finalizar", next: "final" }]
   },
 
